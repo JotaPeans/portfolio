@@ -1,18 +1,21 @@
 {
   "kind": "collectionType",
-  "collectionName": "offices",
+  "collectionName": "projetos",
   "info": {
-    "singularName": "office",
-    "pluralName": "offices",
-    "displayName": "office"
+    "singularName": "projeto",
+    "pluralName": "projetos",
+    "displayName": "projeto"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "current": {
+    "name": {
       "type": "string"
+    },
+    "date": {
+      "type": "datetime"
     },
     "image": {
       "allowedTypes": [
@@ -20,6 +23,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "type": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
     }
   }
 }

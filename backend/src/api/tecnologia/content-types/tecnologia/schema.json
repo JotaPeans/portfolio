@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tecnologias",
+  "info": {
+    "singularName": "tecnologia",
+    "pluralName": "tecnologias",
+    "displayName": "tecnologia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "imageLink": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
