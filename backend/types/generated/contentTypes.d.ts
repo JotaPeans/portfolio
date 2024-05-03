@@ -794,6 +794,7 @@ export interface ApiCarrerCarrer extends Schema.CollectionType {
     singularName: 'carrer';
     pluralName: 'carrers';
     displayName: 'carrer';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -806,6 +807,7 @@ export interface ApiCarrerCarrer extends Schema.CollectionType {
     content: Attribute.JSON;
     imageLink: Attribute.String;
     image: Attribute.Media;
+    position: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "carrer",
     "pluralName": "carrers",
-    "displayName": "carrer"
+    "displayName": "carrer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,14 +31,18 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "position": {
+      "type": "string"
     }
   }
 }
