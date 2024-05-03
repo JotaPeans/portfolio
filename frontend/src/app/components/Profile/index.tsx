@@ -34,6 +34,7 @@ const Profile = async () => {
             <div className="flex flex-col items-center gap-10">
                 <div className="flex flex-col items-center gap-3">
                     <Image
+                        id="image-profile"
                         src={profile.image.data.attributes.url}
                         alt="Joao Pedro"
                         width={213}
@@ -43,11 +44,12 @@ const Profile = async () => {
                     <p className="font-semibold text-white">{profile.currentPosition}</p>
                 </div>
 
-                <h1 className="font-extrabold text-6xl text-center text-white">
-                    I do code and make content <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-purple-600">about it!</span>
+                <h1 className="font-extrabold text-5xl lg:text-6xl text-center text-white">
+                    I do code that Transforms
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-purple-600"> Ideas into Reality!</span>
                 </h1>
 
-                <div className="flex flex-col items-center gap-2 font-light text-zinc-400 text-center">
+                <div className="flex flex-col items-center gap-4 font-light text-zinc-400 text-justify md:gap-2 md:text-center">
                     {profile.aboutMe.map((item: AboutMeProps, index: number) => (
                         <p key={index}>
                             {renderHighlightedText(item.text, item.highLight)}
@@ -59,7 +61,7 @@ const Profile = async () => {
                     <Link
                         href="mailto:jpfontesferreira1@gmail.com"
                         target="_blank"
-                        className="px-7 py-4 bg-white rounded-full font-semibold text-lg hover:scale-[102%] transition-all"
+                        className="px-7 py-4 bg-white rounded-full font-semibold text-sm text-center lg:text-lg hover:scale-[102%] transition-all text-zinc-800"
                     >
                         Entrar em Contato
                     </Link>
@@ -67,7 +69,7 @@ const Profile = async () => {
                     <Link
                         href="https://drive.google.com/file/d/16r2F3I1rr8O-MxSvF4JqHNwsNR-iLPGh/view?usp=sharing"
                         target="_blank"
-                        className="px-7 py-4 border-2 border-white rounded-full font-semibold text-lg text-white hover:scale-[102%] transition-all"
+                        className="px-7 py-4 border-2 border-white rounded-full font-semibold text-sm text-center lg:text-lg text-white hover:scale-[102%] transition-all"
                     >
                         Downdload CV
                     </Link>
