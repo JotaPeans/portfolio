@@ -8,7 +8,6 @@ const API_URL = process.env.API_URL!;
 
 const Experience = async () => {
     const { data: { data } } = await axios.get(API_URL.concat("/carrers?populate=image&sort=from:desc"));
-    console.log("🚀 ~ Experience ~ data:", data)
 
     return (
         <MaxWidthWrapper className="my-12">
